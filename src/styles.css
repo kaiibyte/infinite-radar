@@ -2,7 +2,7 @@
 
 
 /* Modern Volanta-inspired visual refinement */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
 :root{font-family:'DM Sans',Inter,system-ui,sans-serif;color:#edf2f7;background:#0b1017}
 .app-shell{background:#0b1017}
 .topbar{height:66px;padding:0 22px;background:#0d131b;border-color:#202a36;gap:24px}
