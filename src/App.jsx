@@ -10,7 +10,7 @@ const demoFlights = [
   { id:'CPA219', pilot:'WingPilot', aircraft:'Airbus A330-300', from:'VHHH', to:'ZSPD', altitude:'31,000 ft', speed:'439 kts', heading:'036°', lat:25.4, lng:119.0, status:'En route', color:'#73e0b2' },
   { id:'UAE402', pilot:'AviationFan', aircraft:'Airbus A380-800', from:'OMDB', to:'WSSS', altitude:'39,000 ft', speed:'491 kts', heading:'105°', lat:12.2, lng:91.6, status:'En route', color:'#ff8e9e' },
 ];
-const planeIcon = (color, selected=false) => L.divIcon({ className:'plane-marker-wrap', html:`<div class="plane-marker ${selected?'selected':''}" style="--plane-color:${color}"><span>✈</span></div>`, iconSize:[34,34], iconAnchor:[17,17] });
+const planeIcon = (color, selected=false) => L.divIcon({ className:'plane-marker-wrap', html:`<div class="plane-marker ${selected?'selected':''}" style="--plane-color:${color}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5L21 16Z" fill="currentColor"/></svg></div>`, iconSize:[34,34], iconAnchor:[17,17] });
 
 function App(){
   const [selected,setSelected]=useState(demoFlights[0]);
